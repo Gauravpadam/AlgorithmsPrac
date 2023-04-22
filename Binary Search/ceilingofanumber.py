@@ -1,5 +1,5 @@
 arr = [2,3,5,9,14,16,18]
-target = 15
+target = 19
 
 #  ceiling = smallest number in arr >= target
 # Answer supposed to be 14
@@ -16,6 +16,11 @@ target = 15
 s = 0
 e = len(arr) - 1
 foundflag = 0 # Necessary when using print
+
+#What if target is greater than all numbers in array?
+if target>arr[-1]:
+    print(-1) # Return -1
+    exit() #Only needed for print
 
 while (s<=e):
     mid = s + (e-s)//2
