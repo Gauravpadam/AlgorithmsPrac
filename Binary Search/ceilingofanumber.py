@@ -4,6 +4,15 @@ target = 15
 #  ceiling = smallest number in arr >= target
 # Answer supposed to be 14
 
+#s - ans - end
+#if ans not found, answer lies outside
+# i.e s - end - ans
+#Loop keeps searching, Not found? Condition breaks , s>e
+# e -ans -s
+#Start is the ceiling
+#end is floor
+#ans is where the target number is supposed to be
+
 s = 0
 e = len(arr) - 1
 foundflag = 0 # Necessary when using print
