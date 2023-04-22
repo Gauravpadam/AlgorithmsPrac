@@ -27,16 +27,17 @@ class Solution:
         s = 0
         e = len(nums) - 1
 
-        while (s<=e):
-            mid = s + (e-s)//2
-            if target < nums[mid]:
-                e = mid - 1
-            elif target > nums[mid]:
-                s = mid + 1
-            else:
-                #Searching for the last occurence here
-                res[1] = mid # Set the val inside, not after while loop, but why?
-                s = mid + 1
+        if res[0] != -1:
+            while (s<=e):
+                mid = s + (e-s)//2
+                if target < nums[mid]:
+                    e = mid - 1
+                elif target > nums[mid]:
+                    s = mid + 1
+                else:
+                    #Searching for the last occurence here
+                    res[1] = mid # Set the val inside, not after while loop, but why?
+                    s = mid + 1
 
 
         return res
