@@ -4,7 +4,7 @@ class Solution:
         e = n - 1
         pivot = -1
         
-        
+        #Logic: Find Pivot, bs question
         while s<=e:
             mid = s + (e-s)//2
             if (mid < e and nums[mid]>nums[mid+1]): # mid < end as we check mid + 1, which can cause out of bounds error
@@ -23,4 +23,4 @@ class Solution:
             
     
         
-        return pivot + 1
+        return pivot + 1 # The index ofthe lowest element of array is, infact, the rotation count
