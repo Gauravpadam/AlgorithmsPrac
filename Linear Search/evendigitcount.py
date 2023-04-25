@@ -14,10 +14,14 @@ class Solution:
 
         for i in range(len(nums)):
             temp = nums[i] # Just so to not mess up the original array by dividing
+
+            if nums[i] < 0:
+                nums[i] = nums[i] * -1 # Edge case: negative
+
             while temp>0:
                 temp = temp//10 # Dividing to reduce digits by one position at a time
                 countdigit+=1 # Increasing digit count
-            if countdigit % 2 == 0: # even check
+            if countdigit % 2 == 0:
                 counteven+=1
             countdigit = 0 # Resetting digitcount
 
