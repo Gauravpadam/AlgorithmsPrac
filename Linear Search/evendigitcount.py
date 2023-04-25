@@ -12,6 +12,8 @@ class Solution:
 
                 #(Another approach would be str conversion and taking length)
 
+                #Fastest approach : No of digits = int(math.log10(num)+1)
+
         for i in range(len(nums)):
             temp = nums[i] # Just so to not mess up the original array by dividing
 
