@@ -23,3 +23,13 @@ class Solution:
         return s # e ans s
 
 
+        class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+
+      # O(N) approach
+      sum1 = len(nums)*(len(nums)+1)//2
+
+      return sum1 - sum(nums)
+      
+
+
