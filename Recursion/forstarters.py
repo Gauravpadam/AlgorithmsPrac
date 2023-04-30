@@ -7,6 +7,8 @@ def message(n,t):
         print (n)
         return
     print (n)
+
+    #This is the last statement which calls itself, This is Tail Recursion
     message (n+1,t) # Function calling itself
 
 message(1,10) # print numbers from 1 to 10
