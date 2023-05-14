@@ -18,7 +18,7 @@ class Solution:
         '''
             Hidden key to identify here:
             "The majority element is the element that appears more than ⌊n / 2⌋ times."
-            So, Won't the central array element always be the majority element?
+            So, Won't the central array element always be an occurence of the majority element?
             That's it, question gone :)
         '''
         
