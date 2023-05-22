@@ -6,7 +6,7 @@ class Solution:
         '''
             Pretty straightforward approach
 
-            We are supposed to repeat a 'n' number of times so that b is a substring of a
+            We are supposed to repeat 'a', 'n' number of times so that b is a substring of a
             The question asks what is the minimum number of repetitions required?
 
             What do we do?
@@ -52,7 +52,7 @@ class Solution:
                     return repeats # correct no. of repetitions already
                   if b in constructed+a: (partially covered b as in the above floor ceil eg.) # one more concat of a was needed
                     return repeats+1 # +1 for concat
-                  else: (If even a concat wasn't enough to cover b, a is not in b)
+                  else: (If even a concat wasn't enough to cover b, b is not in a i.e. a can never form b)
                     return -1
 
             Done
